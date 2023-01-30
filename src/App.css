@@ -81,6 +81,7 @@ p.success {
 p.danger {
 	color: red;
 }
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -544,11 +545,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.footer-padding{
+  padding: 50px;
 }
 .newsletter-bx {
   background: #FFFFFF;
@@ -620,3 +623,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+  .animate-delay{
+    animation-delay: 0.5s;
+  }
+
+  .invisivel{
+    opacity: 0;
+    animation: fadeOut 1s linear;
+  }
+
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }

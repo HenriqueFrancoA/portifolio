@@ -2,13 +2,14 @@ import { Container, Row, Col, Nav, Tab } from "react-bootstrap"
 import cinema from "../assets/img/cinema-img.jpg";
 import netflix from "../assets/img/netflix-img1.png"
 import bsone from "../assets/img/bsone-img.jpg"
-import projImg3 from "../assets/img/project-img3.png"
 import { ProjetoCard } from "./ProjetoCard"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-export const Projetos = () => {
+export const Projetos = (scrolly) => {
+
+    console.log(scrolly);
 
     const projetos = [
         {
@@ -28,7 +29,7 @@ export const Projetos = () => {
         },
 
     ];
-
+    
     return (
         <section className="project" id="projetos">
             <Container>
@@ -36,9 +37,9 @@ export const Projetos = () => {
                     <Col size={12}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                            <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
+                            <div className={isVisible ? "animate__animated animate__fadeIn": "invisivel"}>
                                 <h2>Projetos</h2>
-                                <p>Misca musca mickey mouse</p>
+                                <p>Uma seleção de projetos elaborados e codificados</p>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="primeiro">
                                     <Nav variant="pills" className="nav-pilss mb-5 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
@@ -51,7 +52,7 @@ export const Projetos = () => {
                                             <Nav.Link eventKey="terceiro">Back-end</Nav.Link>
                                         </Nav.Item>
                                     </Nav>
-                                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__backInLeft" : ""}>
                                         <Tab.Pane eventKey="primeiro">
                                             <Row>
                                                 {
