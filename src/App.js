@@ -10,12 +10,11 @@ import React, { useState, useEffect } from "react";
 function App() {
   return (
     <div className="App" >
-      <MenuItens/>
-      <Home/>
-      <Skills/>
-      <Projetos/>
-      <Contato/>
-      <Footer/>
+      <MenuItens />
+      <Home />
+      <Skills />
+      <Projetos />
+      <Footer />
     </div>
   );
 }
