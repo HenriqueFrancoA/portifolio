@@ -149,6 +149,10 @@ span.navbar-text {
   align-items: center;
 }
 
+.esconder {
+  display: none;
+}
+
 .social-icon {
   display: inline-block;
   margin-left: 14px;

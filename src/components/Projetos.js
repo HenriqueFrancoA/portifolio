@@ -5,6 +5,7 @@ import bsone from "../assets/img/bsone-img.jpg"
 import minhasTarefas from "../assets/img/minhas-tarefas.png"
 import sudokuSolveria from "../assets/img/sudoku-solveria.png"
 import petSaude from "../assets/img/pet-saude.png"
+import springBoot from "../assets/img/spring.png"
 import { ProjetoCard } from "./ProjetoCard"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -15,21 +16,11 @@ export const Projetos = (scrolly) => {
 
     const projetosWeb = [
         {
-            titulo: "Cinema",
-            descricao: "Desenvolvido com React.Js, com estático ",
-            imgUrl: cinema,
-        },
-        {
             titulo: "Netflix",
             descricao: "Uma replica do site NETFLIX. Desenvolvido com React.Js, consumindo API publica",
             imgUrl: netflix,
+            github: "https://github.com/rick5678/Netflix-React.js",
         },
-        {
-            titulo: "BSOne",
-            descricao: "Uma landing page estática",
-            imgUrl: bsone,
-        },
-
     ];
     const projetosMobile = [
         {
@@ -57,12 +48,23 @@ export const Projetos = (scrolly) => {
         },
 
     ];
+    const projetosBackEnd = [
+        {
+            titulo: "Marca Ai",
+            descricao: "API em JAVA SpringBoot",
+            imgUrl: springBoot,
+            github: "https://github.com/rick5678/API-Marca-AI",
+            der: "/portifolio/static/media/der-marca-ai.9ed514818800a58bca23.jpg",
+        },
+
+
+    ];
 
     return (
         <section className="project" id="projetos">
             <Container>
-                <Row>
-                    <Col size={12}>
+                <Row >
+                    <Col size={8} >
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : "invisivel"}>
@@ -80,9 +82,9 @@ export const Projetos = (scrolly) => {
                                                 <Nav.Link eventKey="terceiro">Back-end</Nav.Link>
                                             </Nav.Item>
                                         </Nav>
-                                        <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__backInLeft" : ""}>
+                                        <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__backInLeft " : ""}>
                                             <Tab.Pane eventKey="primeiro">
-                                                <Row>
+                                                <Row className="justify-content-center" >
                                                     {
                                                         projetosWeb.map((projeto, index) => {
                                                             return (
@@ -93,9 +95,20 @@ export const Projetos = (scrolly) => {
                                                 </Row>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="segundo">
-                                                <Row>
+                                                <Row className="justify-content-center">
                                                     {
                                                         projetosMobile.map((projeto, index) => {
+                                                            return (
+                                                                <ProjetoCard key={index} {...projeto} />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="terceiro">
+                                                <Row className="justify-content-center">
+                                                    {
+                                                        projetosBackEnd.map((projeto, index) => {
                                                             return (
                                                                 <ProjetoCard key={index} {...projeto} />
                                                             )
@@ -111,7 +124,7 @@ export const Projetos = (scrolly) => {
                     </Col>
                 </Row>
             </Container>
-            {/* <img className="background-image-right" src={colorSharp2}/> */}
+
         </section>
     );
 }

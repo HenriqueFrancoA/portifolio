@@ -11,25 +11,25 @@ export const Skills = () => {
 
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
+            breakpoint: { max: 464, min: 0 },
+            items: 1
         }
-      };
+    };
 
-    return(
+    return (
         <section className="skill" id="skills">
             <Container>
                 <Row>
@@ -41,27 +41,27 @@ export const Skills = () => {
                             <p>Experiências com diversas linguagens e ferramentas, como: Java, SpringBoot, SQL, ReactJs, Flutter etc. </p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className='item'>
-                                    <img src={meter3} alt="Image"/>
+                                    <img src={meter3} alt="Image" />
                                     <h5>Back-end</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt="Image"/>
+                                    <img src={meter2} alt="Image" />
                                     <h5>Front-end</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt="Image"/>
+                                    <img src={meter3} alt="Image" />
                                     <h5>Mobile</h5>
                                 </div>
                                 <div className='item'>
-                                    <img src={meter2} alt="Image"/>
+                                    <img src={meter2} alt="Image" />
                                     <h5>Banco de dados</h5>
-                                </div>        
+                                </div>
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} alt="Imagem"/>
-        </section> 
+            <img className="background-image-left" src={colorSharp} alt="Imagem" />
+        </section>
     )
 }

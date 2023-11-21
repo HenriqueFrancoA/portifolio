@@ -2,14 +2,16 @@ import { Col } from "react-bootstrap";
 import navIcon4 from "../assets/img/nav-icon4.svg";
 import navIcon5 from "../assets/img/nav-icon5.svg";
 import navIcon6 from "../assets/img/nav-icon6.svg";
+import navIcon7 from "../assets/img/nav-icon7.svg";
 
-export const ProjetoCard = ({ titulo, descricao, imgUrl, playstore, github, figma }) => {
+export const ProjetoCard = ({ titulo, descricao, imgUrl, playstore, github, figma, der, derEscondido }) => {
     return (
-        <Col sm={6} md={4}>
+        <Col sm={6} md={3}>
             <div className="proj-imgbx">
+
                 <img src={imgUrl} alt={titulo} />
                 <div className="proj-txtx">
-                    <h4>{titulo}</h4>
+                    <h5>{titulo}</h5>
                     <span>{descricao}</span>
                     <br />
                     <div className="projeto-icons">
@@ -37,6 +39,22 @@ export const ProjetoCard = ({ titulo, descricao, imgUrl, playstore, github, figm
                                     <a href={figma} target="_blank" rel="noopener noreferrer">
                                         <img src={navIcon6} alt="Figma" />
                                     </a>
+                                </div>
+                            </span>
+                        )}
+                        {der && (
+                            <span className="navbar-text">
+                                <div className="social-icon">
+                                    <a href={der} target="_blank" rel="noopener noreferrer">
+                                        <img src={navIcon7} alt="Figma" />
+                                    </a>
+                                </div>
+                            </span>
+                        )}
+                        {derEscondido && (
+                            <span className="navbar-text esconder">
+                                <div className="social-icon esconder">
+                                    <img src={derEscondido} alt="" className="esconder" />
                                 </div>
                             </span>
                         )}
