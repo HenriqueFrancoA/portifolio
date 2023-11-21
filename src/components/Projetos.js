@@ -33,20 +33,20 @@ export const Projetos = (scrolly) => {
     ];
     const projetosMobile = [
         {
-            titulo: "Minhas tarefas",
-            descricao: "Crie e gerencie suas tarefas e finanças.",
-            imgUrl: minhasTarefas,
-            playstore: "https://play.google.com/store/apps/details?id=com.henrique.minhas_tarefas",
-            github: "https://github.com/rick5678/controlador-de-tarefas",
-            figma: "https://www.figma.com/proto/5tMkaBrdVEF4WGWsR4Ilio/Minhas-Tarefas?type=design&node-id=1-2&t=4Y9hRuUH1vTMPJNs-1&scaling=scale-down&page-id=0%3A1&mode=design",
-        },
-        {
             titulo: "Sudoku Solveria",
             descricao: "Game de Sudoku com mais de 200 níveis!",
             imgUrl: sudokuSolveria,
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.sudoku_solveria",
             github: "https://github.com/rick5678/sudoku-solveria",
 
+        },
+        {
+            titulo: "Minhas tarefas",
+            descricao: "Crie e gerencie suas tarefas e finanças.",
+            imgUrl: minhasTarefas,
+            playstore: "https://play.google.com/store/apps/details?id=com.henrique.minhas_tarefas",
+            github: "https://github.com/rick5678/controlador-de-tarefas",
+            figma: "https://www.figma.com/proto/5tMkaBrdVEF4WGWsR4Ilio/Minhas-Tarefas?type=design&node-id=1-2&t=4Y9hRuUH1vTMPJNs-1&scaling=scale-down&page-id=0%3A1&mode=design",
         },
         {
             titulo: "Pet Saúde",
