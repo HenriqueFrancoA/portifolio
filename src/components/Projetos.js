@@ -5,6 +5,8 @@ import bsone from "../assets/img/bsone-img.jpg"
 import minhasTarefas from "../assets/img/minhas-tarefas.png"
 import sudokuSolveria from "../assets/img/sudoku-solveria.png"
 import petSaude from "../assets/img/pet-saude.png"
+import spring from "../assets/img/spring.png"
+import derMarcaAi from "../assets/img/der-marca-ai.jpg"
 import { ProjetoCard } from "./ProjetoCard"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -15,32 +17,16 @@ export const Projetos = (scrolly) => {
 
     const projetosWeb = [
         {
-            titulo: "Cinema",
-            descricao: "Desenvolvido com React.Js, com estático ",
-            imgUrl: cinema,
-        },
-        {
             titulo: "Netflix",
             descricao: "Uma replica do site NETFLIX. Desenvolvido com React.Js, consumindo API publica",
             imgUrl: netflix,
-        },
-        {
-            titulo: "BSOne",
-            descricao: "Uma landing page estática",
-            imgUrl: bsone,
+            github: "https://github.com/rick5678/Netflix-React.js",
         },
 
     ];
     const projetosMobile = [
         {
-            titulo: "Minhas tarefas",
-            descricao: "Crie e gerencie suas tarefas e finanças.",
-            imgUrl: minhasTarefas,
-            playstore: "https://play.google.com/store/apps/details?id=com.henrique.minhas_tarefas",
-            github: "https://github.com/rick5678/controlador-de-tarefas",
-            figma: "https://www.figma.com/proto/5tMkaBrdVEF4WGWsR4Ilio/Minhas-Tarefas?type=design&node-id=1-2&t=4Y9hRuUH1vTMPJNs-1&scaling=scale-down&page-id=0%3A1&mode=design",
-        },
-        {
+
             titulo: "Sudoku Solveria",
             descricao: "Game de Sudoku com mais de 200 níveis!",
             imgUrl: sudokuSolveria,
@@ -49,11 +35,33 @@ export const Projetos = (scrolly) => {
 
         },
         {
+
+            titulo: "Minhas tarefas",
+            descricao: "Crie e gerencie suas tarefas e finanças.",
+            imgUrl: minhasTarefas,
+            playstore: "https://play.google.com/store/apps/details?id=com.henrique.minhas_tarefas",
+            github: "https://github.com/rick5678/controlador-de-tarefas",
+            figma: "https://www.figma.com/proto/5tMkaBrdVEF4WGWsR4Ilio/Minhas-Tarefas?type=design&node-id=1-2&t=4Y9hRuUH1vTMPJNs-1&scaling=scale-down&page-id=0%3A1&mode=design",
+        },
+        {
+
             titulo: "Pet Saúde",
             descricao: "Cuide das vacinas e vermífugos de seus pets",
             imgUrl: petSaude,
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.pet_care",
             github: "https://github.com/rick5678/pet-saude",
+        },
+
+    ];
+    const projetosBackEnd = [
+        {
+            titulo: "Marca Ai",
+            descricao: "API em JAVA SpringBoot de um aplicativo de agendamentos.",
+            imgUrl: spring,
+            github: "https://github.com/rick5678/API-Marca-AI",
+            der: "/static/media/der-marca-ai.9ed514818800a58bca23.jpg",
+            derEscondido: derMarcaAi,
+
         },
 
     ];
@@ -82,7 +90,7 @@ export const Projetos = (scrolly) => {
                                         </Nav>
                                         <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__backInLeft" : ""}>
                                             <Tab.Pane eventKey="primeiro">
-                                                <Row>
+                                                <Row className="justify-content-center">
                                                     {
                                                         projetosWeb.map((projeto, index) => {
                                                             return (
@@ -93,9 +101,20 @@ export const Projetos = (scrolly) => {
                                                 </Row>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="segundo">
-                                                <Row>
+                                                <Row className="justify-content-center">
                                                     {
                                                         projetosMobile.map((projeto, index) => {
+                                                            return (
+                                                                <ProjetoCard key={index} {...projeto} />
+                                                            )
+                                                        })
+                                                    }
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="terceiro">
+                                                <Row className="justify-content-center">
+                                                    {
+                                                        projetosBackEnd.map((projeto, index) => {
                                                             return (
                                                                 <ProjetoCard key={index} {...projeto} />
                                                             )
