@@ -1,10 +1,9 @@
 import { Container, Row, Col, Nav, Tab } from "react-bootstrap"
-import cinema from "../assets/img/cinema-img.jpg";
 import netflix from "../assets/img/netflix-img1.png"
-import bsone from "../assets/img/bsone-img.jpg"
 import minhasTarefas from "../assets/img/minhas-tarefas.png"
 import sudokuSolveria from "../assets/img/sudoku-solveria.png"
 import petSaude from "../assets/img/pet-saude.png"
+import bruxinha from "../assets/img/bruxinha.jpg"
 import spring from "../assets/img/spring.png"
 import derMarcaAi from "../assets/img/der-marca-ai.jpg"
 import { ProjetoCard } from "./ProjetoCard"
@@ -51,6 +50,13 @@ export const Projetos = (scrolly) => {
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.pet_care",
             github: "https://github.com/rick5678/pet-saude",
         },
+        {
+
+            titulo: "Bruxinha da Sorte",
+            descricao: "Jogue e se divirta, com esse caça-níquel temático de halloween.",
+            imgUrl: bruxinha,
+            playstore: "https://play.google.com/store/apps/details?id=com.henrique.bruxinha_da_sorte",
+        },
 
     ];
     const projetosBackEnd = [
@@ -60,8 +66,7 @@ export const Projetos = (scrolly) => {
             imgUrl: spring,
             github: "https://github.com/rick5678/API-Marca-AI",
             der: "/static/media/der-marca-ai.9ed514818800a58bca23.jpg",
-            derEscondido: derMarcaAi,
-
+            // derEscondido: derMarcaAi,
         },
 
     ];
