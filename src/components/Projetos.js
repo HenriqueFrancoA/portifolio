@@ -4,15 +4,13 @@ import minhasTarefas from "../assets/img/minhas-tarefas.png"
 import sudokuSolveria from "../assets/img/sudoku-solveria.png"
 import petSaude from "../assets/img/pet-saude.png"
 import bruxinha from "../assets/img/bruxinha.jpg"
+import hinos from "../assets/img/logoHinos.png"
 import spring from "../assets/img/spring.png"
-import derMarcaAi from "../assets/img/der-marca-ai.jpg"
 import { ProjetoCard } from "./ProjetoCard"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-export const Projetos = (scrolly) => {
-
-    console.log(scrolly);
+export const Projetos = () => {
 
     const projetosWeb = [
         {
@@ -57,7 +55,15 @@ export const Projetos = (scrolly) => {
             imgUrl: bruxinha,
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.bruxinha_da_sorte",
         },
+        {
 
+            titulo: "Hinos Clubes Brasileiro",
+            descricao: "Galeria de hinos dos maiores clubes do Brasil.",
+            imgUrl: hinos,
+            playstore: "https://play.google.com/store/apps/details?id=br.com.henrique.hinos_clubes_brasileiros",
+            github: "https://github.com/rick5678/Hinos-Clubes-Brasileiros/tree/master",
+
+        },
     ];
     const projetosBackEnd = [
         {
@@ -76,9 +82,9 @@ export const Projetos = (scrolly) => {
             <Container>
                 <Row>
                     <Col size={12}>
-                        <TrackVisibility>
-                            {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__fadeIn" : "invisivel"}>
+                        <TrackVisibility partialVisibility={true}>
+                            {({ isVisible }) => (
+                                <div className={`animate__animated ${isVisible ? 'animate__fadeIn' : 'invisivel'}`}>
                                     <h2>Projetos</h2>
                                     <p>Uma seleção de projetos elaborados e codificados</p>
                                     <Tab.Container id="projects-tabs" defaultActiveKey="primeiro">
@@ -105,8 +111,8 @@ export const Projetos = (scrolly) => {
                                                     }
                                                 </Row>
                                             </Tab.Pane>
-                                            <Tab.Pane eventKey="segundo">
-                                                <Row className="justify-content-center">
+                                            <Tab.Pane eventKey="segundo" >
+                                                <Row className="justify-content-center" >
                                                     {
                                                         projetosMobile.map((projeto, index) => {
                                                             return (
@@ -130,7 +136,7 @@ export const Projetos = (scrolly) => {
                                         </Tab.Content>
 
                                     </Tab.Container>
-                                </div>}
+                                </div>)}
                         </TrackVisibility>
                     </Col>
                 </Row>

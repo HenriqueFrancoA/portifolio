@@ -6,7 +6,7 @@ import navIcon7 from "../assets/img/nav-icon7.svg";
 
 export const ProjetoCard = ({ titulo, descricao, imgUrl, playstore, github, figma, der, derEscondido }) => {
     return (
-        <Col sm={6} md={3}>
+        <Col sm={2} md={2} lg={3} xs={9}>
             <div className="proj-imgbx ">
                 <img src={imgUrl} alt={titulo} />
                 <div className="proj-txtx">

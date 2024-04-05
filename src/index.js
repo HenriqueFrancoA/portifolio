@@ -8,5 +8,7 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
+
+  //para atualizar o github pages npm run deploy
 );
 
