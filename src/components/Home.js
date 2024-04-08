@@ -58,8 +58,8 @@ export const Home = () => {
                                     <span className="tagline">Bem-vindo ao meu portifólio</span>
                                     <h1>{'Olá eu sou Henrique Dev. '}<span className="warp">{text}</span></h1>
                                     <p>
-                                        Sou um desenvolvedor full-stack com habilidades em uma variedade de linguagens de programação, incluindo Java, Python e JavaScript.
-                                        Com fortes habilidades em desenvolvimento web e mobile, eu posso criar soluções empresariais robustas e escaláveis.
+                                        Sou um desenvolvedor full-stack com especialização em Desenvolvedor Flutter e JAVA.
+                                        Com fortes habilidades em desenvolvimento mobile, posso criar soluções empresariais robustas e escaláveis.
                                         Se você precisa de um desenvolvedor para ajudar a melhorar o desempenho e a eficiência de sua empresa, entre em contato hoje.
                                     </p>
                                     <a href="https://www.linkedin.com/in/henrique-franco-43a98520b/" className="conectar">Vamos nos conectar <ArrowRightCircle size={25} /></a>
