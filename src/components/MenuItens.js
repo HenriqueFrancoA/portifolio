@@ -59,7 +59,7 @@ export const MenuItens = () => {
                         </span>
                         <span className="navbar-text">
                             <div className="social-icon">
-                                <a href="https://github.com/rick5678" target="_blank"><img src={navIcon5} alt="Github" /></a>
+                                <a href="https://github.com/HenriqueFrancoA" target="_blank"><img src={navIcon5} alt="Github" /></a>
                             </div>
                         </span>
                     </Navbar.Collapse>

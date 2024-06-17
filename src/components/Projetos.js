@@ -17,7 +17,7 @@ export const Projetos = () => {
             titulo: "Netflix",
             descricao: "Uma replica do site NETFLIX. Desenvolvido com React.Js, consumindo API publica",
             imgUrl: netflix,
-            github: "https://github.com/rick5678/Netflix-React.js",
+            github: "https://github.com/HenriqueFrancoA/Netflix-React.js",
         },
 
     ];
@@ -28,7 +28,7 @@ export const Projetos = () => {
             descricao: "Game de Sudoku com mais de 200 níveis!",
             imgUrl: sudokuSolveria,
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.sudoku_solveria",
-            github: "https://github.com/rick5678/sudoku-solveria",
+            github: "https://github.com/HenriqueFrancoA/sudoku-solveria",
 
         },
         {
@@ -37,7 +37,7 @@ export const Projetos = () => {
             descricao: "Crie e gerencie suas tarefas e finanças.",
             imgUrl: minhasTarefas,
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.minhas_tarefas",
-            github: "https://github.com/rick5678/controlador-de-tarefas",
+            github: "https://github.com/HenriqueFrancoA/controlador-de-tarefas",
             figma: "https://www.figma.com/proto/5tMkaBrdVEF4WGWsR4Ilio/Minhas-Tarefas?type=design&node-id=1-2&t=4Y9hRuUH1vTMPJNs-1&scaling=scale-down&page-id=0%3A1&mode=design",
         },
         {
@@ -46,7 +46,7 @@ export const Projetos = () => {
             descricao: "Cuide das vacinas e vermífugos de seus pets",
             imgUrl: petSaude,
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.pet_care",
-            github: "https://github.com/rick5678/pet-saude",
+            github: "https://github.com/HenriqueFrancoA/pet-saude",
         },
         {
 
@@ -61,7 +61,7 @@ export const Projetos = () => {
             descricao: "Galeria de hinos dos maiores clubes do Brasil.",
             imgUrl: hinos,
             playstore: "https://play.google.com/store/apps/details?id=br.com.henrique.hinos_clubes_brasileiros",
-            github: "https://github.com/rick5678/Hinos-Clubes-Brasileiros/tree/master",
+            github: "https://github.com/HenriqueFrancoA/Hinos-Clubes-Brasileiros/tree/master",
 
         },
     ];
@@ -70,7 +70,7 @@ export const Projetos = () => {
             titulo: "Marca Ai",
             descricao: "API em JAVA SpringBoot de um aplicativo de agendamentos.",
             imgUrl: spring,
-            github: "https://github.com/rick5678/API-Marca-AI",
+            github: "https://github.com/HenriqueFrancoA/API-Marca-AI",
             der: "/static/media/der-marca-ai.9ed514818800a58bca23.jpg",
             // derEscondido: derMarcaAi,
         },

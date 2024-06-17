@@ -22,7 +22,7 @@ export const Footer = () => {
 
 
                         <div className="social-icon">
-                            <a href="https://github.com/rick5678" target="_blank"><img src={navIcon5} alt="Github" /></a>
+                            <a href="https://github.com/HenriqueFrancoA" target="_blank"><img src={navIcon5} alt="Github" /></a>
                         </div>
 
                         <p>CopyRight 2023. Todos direitos reservados</p>
