@@ -5,6 +5,7 @@ import sudokuSolveria from "../assets/img/sudoku-solveria.png"
 import petSaude from "../assets/img/pet-saude.png"
 import bruxinha from "../assets/img/bruxinha.jpg"
 import hinos from "../assets/img/logoHinos.png"
+import h from "../assets/img/h.png"
 import spring from "../assets/img/spring.png"
 import { ProjetoCard } from "./ProjetoCard"
 import 'animate.css';
@@ -23,7 +24,6 @@ export const Projetos = () => {
     ];
     const projetosMobile = [
         {
-
             titulo: "Sudoku Solveria",
             descricao: "Game de Sudoku com mais de 200 níveis!",
             imgUrl: sudokuSolveria,
@@ -32,7 +32,6 @@ export const Projetos = () => {
 
         },
         {
-
             titulo: "Minhas tarefas",
             descricao: "Crie e gerencie suas tarefas e finanças.",
             imgUrl: minhasTarefas,
@@ -41,7 +40,6 @@ export const Projetos = () => {
             figma: "https://www.figma.com/proto/5tMkaBrdVEF4WGWsR4Ilio/Minhas-Tarefas?type=design&node-id=1-2&t=4Y9hRuUH1vTMPJNs-1&scaling=scale-down&page-id=0%3A1&mode=design",
         },
         {
-
             titulo: "Pet Saúde",
             descricao: "Cuide das vacinas e vermífugos de seus pets",
             imgUrl: petSaude,
@@ -49,20 +47,25 @@ export const Projetos = () => {
             github: "https://github.com/HenriqueFrancoA/pet-saude",
         },
         {
-
             titulo: "Bruxinha da Sorte",
             descricao: "Jogue e se divirta, com esse caça-níquel temático de halloween.",
             imgUrl: bruxinha,
             playstore: "https://play.google.com/store/apps/details?id=com.henrique.bruxinha_da_sorte",
         },
         {
-
             titulo: "Hinos Clubes Brasileiro",
             descricao: "Galeria de hinos dos maiores clubes do Brasil.",
             imgUrl: hinos,
             playstore: "https://play.google.com/store/apps/details?id=br.com.henrique.hinos_clubes_brasileiros",
             github: "https://github.com/HenriqueFrancoA/Hinos-Clubes-Brasileiros/tree/master",
 
+        },
+        {
+            titulo: "H",
+            descricao: "Rede social inspirada no X.",
+            imgUrl: h,
+            github: "https://github.com/HenriqueFrancoA/h",
+            download: "https://drive.google.com/file/d/1n65OvUjDXSVbOtk1QnlFpKkbQun7WI7Q/view?usp=sharing"
         },
     ];
     const projetosBackEnd = [

@@ -3,8 +3,9 @@ import navIcon4 from "../assets/img/nav-icon4.svg";
 import navIcon5 from "../assets/img/nav-icon5.svg";
 import navIcon6 from "../assets/img/nav-icon6.svg";
 import navIcon7 from "../assets/img/nav-icon7.svg";
+import navIcon8 from "../assets/img/nav-icon8.svg";
 
-export const ProjetoCard = ({ titulo, descricao, imgUrl, playstore, github, figma, der, derEscondido }) => {
+export const ProjetoCard = ({ titulo, descricao, imgUrl, playstore, github, figma, der, download }) => {
     return (
         <Col sm={2} md={2} lg={3} xs={9}>
             <div className="proj-imgbx ">
@@ -50,10 +51,12 @@ export const ProjetoCard = ({ titulo, descricao, imgUrl, playstore, github, figm
                                 </div>
                             </span>
                         )}
-                        {derEscondido && (
-                            <span className="navbar-text esconder">
-                                <div className="social-icon esconder">
-                                    <img src={derEscondido} className="esconder" />
+                        {download && (
+                            <span className="navbar-text">
+                                <div className="social-icon">
+                                    <a href={download} target="_blank" rel="noopener noreferrer">
+                                        <img src={navIcon8} alt="Der" />
+                                    </a>
                                 </div>
                             </span>
                         )}
