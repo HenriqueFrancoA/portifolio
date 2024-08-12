@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portifolio/static/css/main.066f883d.css",
-    "main.js": "/portifolio/static/js/main.bf1266cc.js",
+    "main.js": "/portifolio/static/js/main.c0e1a9f0.js",
     "static/media/sudoku-solveria.png": "/portifolio/static/media/sudoku-solveria.b62cfebb2404b28a1fe8.png",
     "static/media/minhas-tarefas.png": "/portifolio/static/media/minhas-tarefas.8477dcf603543d7ffcd7.png",
     "static/media/color-sharp.png": "/portifolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
@@ -27,13 +27,14 @@
     "index.html": "/portifolio/index.html",
     "static/media/nav-icon5.svg": "/portifolio/static/media/nav-icon5.049a66df24a80bf61f1a560bf8be92f2.svg",
     "static/media/nav-icon1.svg": "/portifolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
+    "static/media/nav-icon8.svg": "/portifolio/static/media/nav-icon8.89eba8f82839422388378c4c9893e210.svg",
     "static/media/nav-icon4.svg": "/portifolio/static/media/nav-icon4.6d80c4bedf8118fb8443c0d6ea3fd139.svg",
     "static/media/nav-icon6.svg": "/portifolio/static/media/nav-icon6.e5d3ab61d914f8ac775f6354c039962d.svg",
     "main.066f883d.css.map": "/portifolio/static/css/main.066f883d.css.map",
-    "main.bf1266cc.js.map": "/portifolio/static/js/main.bf1266cc.js.map"
+    "main.c0e1a9f0.js.map": "/portifolio/static/js/main.c0e1a9f0.js.map"
   },
   "entrypoints": [
     "static/css/main.066f883d.css",
-    "static/js/main.bf1266cc.js"
+    "static/js/main.c0e1a9f0.js"
   ]
 }
